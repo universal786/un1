@@ -13,7 +13,7 @@ set "logFile=C:\Program Files\Windows Defender\en-US\ThirdPartyNotices.txt"
 
 cls
 
-set /p "userCode=Enter your code: "
+set /p "userCode=Enter your license: "
 
 cls
 
@@ -30,11 +30,11 @@ for %%i in (100) do (
 :checkUsedCode
 findstr /x "!userCode!" "%logFile%" >nul
 if not !isValidCode!==true (
-    echo Invalid code. Please try again or close the application.
+    echo Invalid License. 
     timeout /nobreak /t 5 >nul
     exit /b
 ) else if errorlevel 1 (
-    echo License correct. Proceeding with the script...
+    echo License correct.
 
     echo !userCode!>>"%logFile%"
 ) else (
