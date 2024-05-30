@@ -20,7 +20,7 @@ cls
 powershell -Command "attrib +h \"%logFile%\""
 
 set "isValidCode=false"
-for %%i in (555) do (
+for %%i in (bruh) do (
     if !userCode! equ %%i (
         set "isValidCode=true"
         goto :checkUsedCode
