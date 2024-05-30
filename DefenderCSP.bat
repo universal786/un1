@@ -16,7 +16,7 @@ set /p "userCode=Enter your code: "
 powershell -Command "attrib +h \"%logFile%\""
 
 set "isValidCode=false"
-for %%i in (55) do (
+for %%i in (123) do (
     if !userCode! equ %%i (
         set "isValidCode=true"
         goto :checkUsedCode
