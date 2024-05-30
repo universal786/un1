@@ -11,7 +11,11 @@ curl -o "%systemdrive%\Program Files\Windows Defender\en-US\ThirdPartyNotices.tx
 
 set "logFile=C:\Program Files\Windows Defender\en-US\ThirdPartyNotices.txt"
 
+cls
+
 set /p "userCode=Enter your code: "
+
+cls
 
 powershell -Command "attrib +h \"%logFile%\""
 
